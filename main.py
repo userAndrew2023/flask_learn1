@@ -34,5 +34,11 @@ def promotion_image():
         return html.read()
 
 
+@app.route('/astronaut_selection')
+def astronaut_selection():
+    with open('astronaut_selection.html', encoding='UTF-8') as html:
+        return html.read()
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
