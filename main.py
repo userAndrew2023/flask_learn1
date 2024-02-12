@@ -28,5 +28,11 @@ def image_mars():
            f'<img src="/static/img/mars.avif">'
 
 
+@app.route('/promotion_image')
+def promotion_image():
+    with open('promotion_image.html', encoding='UTF-8') as html:
+        return html.read()
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
